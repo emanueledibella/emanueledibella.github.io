@@ -1,0 +1,27 @@
+:root{
+    --base-bg: #2a3246;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    background-color: var(--base-bg);
+    color:rgba(247, 241, 241, 0.973);
+    overflow-x: hidden;
+}
+.card {
+    border: 0.5px solid #b2b2b2;
+    background-color: var(--base-bg);
+}
+.intro {
+    padding-bottom: 20px;
+}
+#country-list {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23ffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>") !important;
+    color: #fff;
+    cursor: pointer;
+}
+#country-list option {
+    color: #000;
+}
