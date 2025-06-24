@@ -17,6 +17,13 @@
     <div class="container-fluid">
         <div class="row pre-projects align-items-center">
             <div class="projects ">
+                <div class="project" style="background: url('./assets/img/findmypet.png')">
+                    <a href="https://findmypet.info" title="FindMyPet">
+                        <div class="filter">
+                            <h3 class="project-name">FindMyPet</h3>
+                        </div>
+                    </a>
+                </div>
                 <div class="project" style="background: url('./coronavirus-trend/logo.png')">
                     <a href="./coronavirus-trend" title="Coronavirus Trend">
                         <div class="filter">
@@ -42,13 +49,6 @@
                     <a href="https://github.com/emanueledibella/lamp-server-docker" title="LAMP Server Docker">
                         <div class="filter">
                             <h3 class="project-name">LAMP Server Docker</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="project" style="background: url('./assets/img/findmypet.png')">
-                    <a href="https://findmypet.info" title="FindMyPet">
-                        <div class="filter">
-                            <h3 class="project-name">FindMyPet</h3>
                         </div>
                     </a>
                 </div>
