@@ -1,77 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Description" content="Emanuele Di Bella Full stack developer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <title>Emanuele Di Bella</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Il piccolo laboratorio di Emanuele Di Bella. Progetti open source, esperimenti con l’intelligenza artificiale e strumenti per il web.">
+    <meta name="theme-color" content="#f7f8f2">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:title" content="Emanuele Di Bella — Codice e curiosità">
+    <meta property="og:description" content="Progetti personali, open source e idee che diventano codice. Entra nel mio piccolo laboratorio.">
+    <meta property="og:url" content="https://emanueledibella.com/">
+    <link rel="canonical" href="https://emanueledibella.com/">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/dm-sans-variable.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/fonts/instrument-serif-italic.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/js.js" defer></script>
+    <title>Emanuele Di Bella — Codice e curiosità</title>
 </head>
+<body id="top">
+    <a class="skip-link" href="#main">Vai al contenuto</a>
+    <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <symbol id="icon-arrow-up-right" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+        <symbol id="icon-arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-7-7 7 7 7-7"/></symbol>
+        <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.13c-3.09.67-3.74-1.31-3.74-1.31-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.59 1.21 3.22.93.1-.72.39-1.21.7-1.49-2.47-.28-5.06-1.24-5.06-5.49 0-1.21.43-2.2 1.14-2.98-.11-.28-.49-1.41.11-2.94 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.66.12 2.94.71.78 1.14 1.77 1.14 2.98 0 4.26-2.6 5.21-5.07 5.48.4.35.75 1.02.75 2.06v3.1c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></symbol>
+        <symbol id="icon-asterisk" viewBox="0 0 40 40"><path d="M20 3v34M3 20h34M8 8l24 24M8 32 32 8"/></symbol>
+    </svg>
 
-<body class="bg-dark text-light">
-    <div class="container-fluid">
-        <div class="row pre-projects align-items-center">
-            <div class="projects ">
-                <div class="project" style="background: url('./assets/img/findmypet.png')">
-                    <a href="https://findmypet.info" title="FindMyPet">
-                        <div class="filter">
-                            <h3 class="project-name">FindMyPet</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="project" style="background: url('./coronavirus-trend/logo.png')">
-                    <a href="./coronavirus-trend" title="Coronavirus Trend">
-                        <div class="filter">
-                            <h3 class="project-name">Coronavirus Trend</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="project" style="background: url('./assets/img/joomla.png')">
-                    <a href="https://github.com/emanueledibella/PDF-Viewer-Joomla" title="Joomla PDF Viewer">
-                        <div class="filter">
-                            <h3 class="project-name">Joomla PDF Viewer</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="project" style="background: url('./assets/img/python.png')">
-                    <a href="https://github.com/emanueledibella/face-recognition" title="Face Recognition">
-                        <div class="filter">
-                            <h3 class="project-name">Face Recognition</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="project" style="background: url('./assets/img/docker.jpg')">
-                    <a href="https://github.com/emanueledibella/lamp-server-docker" title="LAMP Server Docker">
-                        <div class="filter">
-                            <h3 class="project-name">LAMP Server Docker</h3>
-                        </div>
-                    </a>
+    <header class="site-header page-width">
+        <a class="wordmark" href="#top" aria-label="Emanuele Di Bella, torna all’inizio">
+            <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-asterisk"/></svg></span>
+            <span>emanuele<br>di bella<span class="brand-period">.</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navigazione principale"><a href="#progetti">Progetti</a><a href="#info">Due righe su di me</a></nav>
+        <a class="header-github" href="https://github.com/emanueledibella" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg><span>GitHub</span><svg class="icon external-icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg><span class="sr-only"> (si apre in una nuova scheda)</span>
+        </a>
+    </header>
+
+    <main id="main">
+        <section class="hero page-width" aria-labelledby="hero-title">
+            <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> Il mio piccolo laboratorio digitale</p>
+            <div class="hero-content">
+                <h1 id="hero-title">Scrivo codice.<br><em>Seguo idee.</em><span class="hero-star" aria-hidden="true">✳</span></h1>
+                <div class="hero-intro"><p>Sono Emanuele, sviluppatore.<br>Qui raccolgo quello che costruisco: progetti open source, strumenti utili e qualche esperimento.</p><a class="text-link" href="#progetti">Dai un’occhiata <svg class="icon" aria-hidden="true"><use href="#icon-arrow-down"/></svg></a></div>
+            </div>
+            <div class="hero-footnote" aria-hidden="true"><span>Curiosità → codice → condivisione</span><span>Uno spazio personale, in continua evoluzione.</span></div>
+        </section>
+
+        <section class="featured-section page-width" id="progetti" aria-labelledby="featured-title">
+            <div class="section-heading">
+                <div><p class="eyebrow">01 / In evidenza</p><h2 id="featured-title">Idee che prendono forma<span class="green-period">.</span></h2></div>
+                <div class="carousel-controls" data-carousel-controls hidden>
+                    <span class="slide-count" aria-hidden="true"><span data-slide-number>01</span><span class="count-divider">/</span>03</span>
+                    <button class="circle-button previous-button" type="button" data-previous aria-label="Progetto precedente"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></button>
+                    <button class="circle-button" type="button" data-next aria-label="Progetto successivo"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></button>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="project-carousel" data-carousel aria-label="Progetti in evidenza">
+                <article class="featured-project project-sbrain" id="slide-sbrain" data-slide data-name="sbrain">
+                    <div class="project-copy">
+                        <p class="project-kicker"><span class="small-dot"></span> Open source <span class="project-type">/ Memoria & AI</span></p>
+                        <div class="project-story"><h3>sbrain<span class="project-title-dot">.</span></h3><p class="project-subtitle">Un secondo cervello.<br>Con le tue connessioni.</p><p class="project-description">Un motore di memoria personale, locale. Conserva fonti, collega informazioni e tiene traccia di come cambiano nel tempo.</p></div>
+                        <div class="project-bottom"><ul class="tech-tags" aria-label="Tecnologie"><li>Neo4j</li><li>Ollama</li><li>MCP</li></ul><a class="project-cta" href="https://github.com/emanueledibella/sbrain" target="_blank" rel="noopener noreferrer">Esplora il progetto <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg><span class="sr-only"> sbrain su GitHub (nuova scheda)</span></a></div>
+                    </div>
+                    <figure class="project-visual sbrain-visual" data-swipe-area>
+                        <img src="assets/img/sbrain-library.webp" alt="Un libro aperto sospeso tra gli scaffali di una biblioteca" width="1400" height="2100" fetchpriority="high" draggable="false">
+                        <span class="visual-label" aria-hidden="true"><span class="small-dot"></span> Idee, collegate.</span>
+                        <figcaption><a href="https://unsplash.com/photos/view-of-floating-open-book-from-stacked-books-in-library-HH4WBGNyltc" target="_blank" rel="noopener noreferrer">Foto: Jaredd Craig / Unsplash<span class="sr-only"> (nuova scheda)</span></a></figcaption>
+                    </figure>
+                </article>
+                <article class="featured-project project-jarvis" id="slide-jarvis" data-slide data-name="Jarvis">
+                    <div class="project-copy">
+                        <p class="project-kicker"><span class="small-dot"></span> Open source <span class="project-type">/ Assistente personale</span></p>
+                        <div class="project-story"><h3>Jarvis<span class="project-title-dot">.</span></h3><p class="project-subtitle">Un assistente.<br>Un po’ più personale.</p><p class="project-description">Voce, agenti AI, strumenti MCP e routine. Un assistente che unisce modelli locali o cloud e memoria personale.</p></div>
+                        <div class="project-bottom"><ul class="tech-tags" aria-label="Tecnologie"><li>Python</li><li>React</li><li>LangGraph</li></ul><a class="project-cta" href="https://github.com/emanueledibella/jarvis" target="_blank" rel="noopener noreferrer">Esplora il progetto <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg><span class="sr-only"> Jarvis su GitHub (nuova scheda)</span></a></div>
+                    </div>
+                    <figure class="project-visual jarvis-visual" data-swipe-area>
+                        <span class="orbit orbit-one" aria-hidden="true"></span><span class="orbit orbit-two" aria-hidden="true"></span>
+                        <img class="jarvis-logo" src="assets/img/jarvis.svg" alt="Logo originale di Jarvis: una J circondata da orbite azzurre" width="1024" height="1024" loading="lazy" draggable="false">
+                        <figcaption class="visual-signature">JARVIS <span>/ Il tuo assistente, il tuo spazio.</span></figcaption>
+                    </figure>
+                </article>
+                <article class="featured-project project-findmypet" id="slide-findmypet" data-slide data-name="FindMyPet">
+                    <div class="project-copy">
+                        <p class="project-kicker"><span class="small-dot"></span> Progetto personale <span class="project-type">/ Web</span></p>
+                        <div class="project-story"><h3>FindMyPet<span class="project-title-dot">.</span></h3><p class="project-subtitle">Un piccolo aiuto.<br>Per ritrovarsi.</p><p class="project-description">Un progetto dedicato agli animali smarriti. La tecnologia al servizio di qualcosa di molto concreto: aiutarli a tornare a casa.</p></div>
+                        <div class="project-bottom"><ul class="tech-tags" aria-label="Ambito"><li>Web app</li><li>Community</li></ul><a class="project-cta" href="https://findmypet.info" target="_blank" rel="noopener noreferrer">Visita il sito <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg><span class="sr-only"> FindMyPet (nuova scheda)</span></a></div>
+                    </div>
+                    <figure class="project-visual findmypet-visual" data-swipe-area>
+                        <img src="assets/img/findmypet.png" alt="Logo FindMyPet: una zampa e un cuore in un segnaposto blu" width="1024" height="1024" loading="lazy" draggable="false">
+                        <figcaption class="visual-signature">FINDMYPET <span>/ La strada verso casa.</span></figcaption>
+                    </figure>
+                </article>
+                <p class="sr-only" aria-live="polite" aria-atomic="true" data-carousel-status></p>
+            </div>
+            <div class="carousel-tabs" data-carousel-tabs aria-label="Scegli un progetto in evidenza" hidden>
+                <button type="button" id="tab-sbrain" data-slide-tab aria-controls="slide-sbrain"><span class="tab-number">01</span><span>sbrain</span><span class="tab-detail">Memoria personale</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></button>
+                <button type="button" id="tab-jarvis" data-slide-tab aria-controls="slide-jarvis"><span class="tab-number">02</span><span>Jarvis</span><span class="tab-detail">Assistente AI</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></button>
+                <button type="button" id="tab-findmypet" data-slide-tab aria-controls="slide-findmypet"><span class="tab-number">03</span><span>FindMyPet</span><span class="tab-detail">Animali & community</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></button>
+            </div>
+        </section>
 
-    <footer>
-        <ul class="menu-footer m-0 p-0">
-            <li class="menu-item-footer">
-                <a href="https://github.com/emanueledibella" title="Github"><i class="fa-brands fa-github fa-2x"></i></a>
-            </li>
-            <li class="menu-item-footer">
-                <a href="https://www.linkedin.com/in/emanuele-di-bella-b4a986151/" title="Linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-            </li>
-        </ul>
+        <section class="archive-section page-width" aria-labelledby="archive-title">
+            <div class="section-heading archive-heading"><div><p class="eyebrow">02 / La raccolta</p><h2 id="archive-title">Tutti i progetti<span class="project-total">07</span></h2></div><p>Esperimenti recenti e cose fatte nel tempo.</p></div>
+            <div class="project-filters" role="group" aria-label="Filtra i progetti" hidden data-filters>
+                <button type="button" data-filter="all" aria-pressed="true">Tutti <span>07</span></button>
+                <button type="button" data-filter="ai" aria-pressed="false">AI & strumenti <span>03</span></button>
+                <button type="button" data-filter="web" aria-pressed="false">Web <span>03</span></button>
+                <button type="button" data-filter="devops" aria-pressed="false">DevOps <span>01</span></button>
+            </div>
+            <p class="sr-only" aria-live="polite" aria-atomic="true" data-filter-status></p>
+            <div class="project-list">
+                <a class="project-row" href="https://github.com/emanueledibella/sbrain" target="_blank" rel="noopener noreferrer" data-category="ai"><span class="row-number" aria-hidden="true">01</span><div class="row-title"><h3>sbrain <span class="new-badge">Nuovo</span></h3><p>Una memoria personale che collega fonti, idee e informazioni.</p></div><span class="row-category">AI & memoria</span><span class="row-tech">Neo4j / Ollama / MCP</span><span class="row-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span><span class="sr-only">GitHub, nuova scheda</span></a>
+                <a class="project-row" href="https://github.com/emanueledibella/jarvis" target="_blank" rel="noopener noreferrer" data-category="ai"><span class="row-number" aria-hidden="true">02</span><div class="row-title"><h3>Jarvis <span class="new-badge">Nuovo</span></h3><p>Un assistente personale con voce, agenti e routine.</p></div><span class="row-category">Assistente AI</span><span class="row-tech">Python / React</span><span class="row-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span><span class="sr-only">GitHub, nuova scheda</span></a>
+                <a class="project-row" href="https://findmypet.info" target="_blank" rel="noopener noreferrer" data-category="web"><span class="row-number" aria-hidden="true">03</span><div class="row-title"><h3>FindMyPet</h3><p>Un aiuto per ritrovare gli animali smarriti.</p></div><span class="row-category">Web app</span><span class="row-tech">Animali / Community</span><span class="row-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span><span class="sr-only">Sito del progetto, nuova scheda</span></a>
+                <a class="project-row" href="https://github.com/emanueledibella/coronavirus-trend" target="_blank" rel="noopener noreferrer" data-category="web"><span class="row-number" aria-hidden="true">04</span><div class="row-title"><h3>Coronavirus Trend</h3><p>Grafici e dati per seguire l’andamento della pandemia.</p></div><span class="row-category">Dati & visualizzazione</span><span class="row-tech">Web / Open data</span><span class="row-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span><span class="sr-only">GitHub, nuova scheda</span></a>
+                <a class="project-row" href="https://github.com/emanueledibella/PDF-Viewer-Joomla" target="_blank" rel="noopener noreferrer" data-category="web"><span class="row-number" aria-hidden="true">05</span><div class="row-title"><h3>Joomla PDF Viewer</h3><p>Un modulo semplice per leggere PDF all’interno di Joomla.</p></div><span class="row-category">Estensione CMS</span><span class="row-tech">Joomla / PHP</span><span class="row-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span><span class="sr-only">GitHub, nuova scheda</span></a>
+                <a class="project-row" href="https://github.com/emanueledibella/face-recognition" target="_blank" rel="noopener noreferrer" data-category="ai"><span class="row-number" aria-hidden="true">06</span><div class="row-title"><h3>Face Recognition</h3><p>Esperimenti di riconoscimento facciale con Python e MySQL.</p></div><span class="row-category">Computer vision</span><span class="row-tech">Python / MySQL</span><span class="row-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span><span class="sr-only">GitHub, nuova scheda</span></a>
+                <article class="project-row archived-project" data-category="devops"><span class="row-number" aria-hidden="true">07</span><div class="row-title"><h3>LAMP Server Docker <span class="archive-badge">Archivio</span></h3><p>Un ambiente LAMP in Docker. Repository non più disponibile.</p></div><span class="row-category">Ambiente di sviluppo</span><span class="row-tech">Docker / LAMP</span><span class="archived-mark" aria-hidden="true">—</span></article>
+            </div>
+            <div class="archive-footer"><span>C’è sempre qualche idea in più nel cassetto.</span><a class="text-link" href="https://github.com/emanueledibella" target="_blank" rel="noopener noreferrer">Tutto il codice su GitHub <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg><span class="sr-only"> (nuova scheda)</span></a></div>
+        </section>
+
+        <section class="about-section" id="info" aria-labelledby="about-title">
+            <div class="about-content page-width">
+                <div class="about-label"><p class="eyebrow">03 / Dietro al codice</p><svg class="about-asterisk icon" aria-hidden="true"><use href="#icon-asterisk"/></svg><span class="about-aside">Sempre qualcosa<br>da imparare.</span></div>
+                <div class="about-story"><h2 id="about-title">Prima la curiosità.<br><em>Poi, il resto.</em></h2><div class="about-paragraphs"><p>Mi piace capire come funzionano le cose e provare a costruirne di nuove. Il web è il mio punto di partenza; l’intelligenza artificiale, uno dei territori che sto esplorando.</p><p>Questo sito è una raccolta personale: idee nate da un’esigenza, esperimenti fatti per imparare e strumenti condivisi perché possano essere utili anche ad altri.</p></div><a class="text-link" href="https://www.linkedin.com/in/emanuele-di-bella-b4a986151/" target="_blank" rel="noopener noreferrer">Ci troviamo su LinkedIn <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg><span class="sr-only"> (nuova scheda)</span></a></div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer page-width">
+        <div class="footer-top"><a class="footer-name" href="#top">Emanuele Di Bella<span class="green-period">.</span></a><p>Fatto di codice e curiosità.</p><div class="footer-socials"><a href="https://github.com/emanueledibella" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg><span class="sr-only"> (nuova scheda)</span></a><a href="https://www.linkedin.com/in/emanuele-di-bella-b4a986151/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg><span class="sr-only"> (nuova scheda)</span></a></div></div>
+        <div class="footer-bottom"><span>© <span data-year>2026</span> Emanuele Di Bella</span><a href="#top">Torna su <span aria-hidden="true">↑</span></a></div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/10f3fe22ee.js" crossorigin="anonymous"></script>
-    <script src="assets/js/js.js"></script>
 </body>
-
 </html>
